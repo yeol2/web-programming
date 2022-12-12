@@ -1,0 +1,250 @@
+* { 
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: white;
+}
+/* --- header 영역 --- */
+/* 앵커 태그 꾸미기 */
+a {  
+    color: white;
+}
+/* nav바 꾸미기 */
+.nav { 
+    position: fixed;
+    width: 100%;   
+    height: 80px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263343;
+    padding: 12px 15px;
+}
+
+.nav_logo i {
+    font-size: 30px;
+    color: gold;
+}
+
+.nav_logo > a {
+    font-size: 30px;
+    color: white;
+}
+
+.nav_menu {
+    display: flex;
+    padding: 12px;
+}
+
+.nav_menu li {
+    padding: 8px 12px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav_menu li a{
+    font-size: 20px;
+}
+
+.nav_menu li:hover {
+    background-color: #d49466;
+    border-radius: 4px;
+}
+.clicked {
+    padding: 1px;
+    background-color: #d49466;
+    border-radius: 4px;
+}
+/* nav바 꾸미기 */
+/* 
+@media screen and (max-width:768px) {
+    .nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .nav_menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .nav_menu li {
+        width: 100%;
+        text-align: center;
+    }
+} */
+/* --- header 영역 --- */
+
+/* --- intro_bg 영역 --- */
+.intro_bg {
+    width: 100%;
+    height: 1000px;
+    background-color: black;
+}
+
+.intro_msg {
+    justify-content: center;
+    text-align: center;
+}
+
+.intro_msg h2 {
+    padding-top: 420px;
+    font-size: 60px;
+    margin-bottom: 30px;    
+}
+
+.intro_msg p {
+    font-size: 25px;
+}
+
+.intro_msg button {
+    font-size: 20px;
+    background: none;
+    color: white;
+    border: 2px solid darkseagreen;
+    padding: 15px 20px;
+    border-radius: 20px;
+    margin-top: 40px;
+    margin-bottom: 200px;
+    outline: none;
+    cursor: pointer;
+}
+
+.intro_msg button:hover {
+    background-color: darkseagreen
+}
+/* --- intro_bg 영역 --- */
+
+/* --- main_act 공통양식 부분 --- */
+.main_act {
+    width: 100%;
+    height: 800px;
+    background-color: white;
+}
+
+h1{
+    font-size: 48px;
+    color: black;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.main_act p {
+    color: black;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px;
+}
+
+.act_item {
+    display: flex;
+    width: 1280px;
+    height: 500px;
+    margin: auto;
+
+}
+
+.act_item li {
+    flex: 1;
+    color: black;
+    margin-top: 60px;
+    height: 400px;
+    text-align: center;
+}
+
+.act_item li:not(:last-child) {
+    margin-right: 25px;
+}
+
+h3 {
+    padding: 18px;
+    color: black;
+}
+
+.main_act p {
+    margin-top: 15px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold
+}
+/* --- main_act 공통양식 부분 --- */
+
+/* act 마다 개별적인 추가 구성 요소 */
+.ABOUT:hover{
+    border: 4px solid blue;
+    border-radius: 40px;
+}
+.FOOD:hover{
+    border: 4px solid red;
+    border-radius: 40px;
+}
+.ART:hover{
+    border: 4px solid #66CDAA;
+    border-radius: 40px;
+}
+.SPORTS:hover{
+    border: 4px solid gold;
+    border-radius: 40px;
+}
+
+#ABOUT {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: blue;
+}
+
+#FOOD {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: red;
+}
+
+#ART {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: #66CDAA;
+}
+
+#SPORTS {
+    text-decoration: underline;
+    text-underline-position: under;
+    text-decoration-color: gold;
+}
+/* act 마다 개별적인 추가 구성 요소 */
+
+footer {
+    display: flex;
+
+    padding: 30px;
+    background-color: #1f1f1f;
+    color: white;
+    font-size: 12px;
+}
+
+footer > .logo {
+    font-size: 60px;
+}
+
+footer > div:first-child {
+    flex: 3;
+    text-align: center;
+}
+
+footer > .footer_text {
+    font-size: 15px;
+}
+
+footer > div:last-child {
+    flex: 9;
+}
+
+.sns-set {
+    text-align: right ;
+    padding: 20px;
+}
