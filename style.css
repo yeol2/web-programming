@@ -43,13 +43,13 @@ a {
 }
 
 .nav_menu li {
+    margin-right: 30px;
     padding: 8px 12px;
     display: inline-block;
     margin-left: 20px;
 }
 
 .nav_menu li a{
-    margin-right: 30px;
     font-size: 20px;
 }
 
